@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>myPortfolio</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+
+            <div class="menu">
+                <div class="logo">
+                    <span class="logo-span">PÄIKE</span>
+                </div>
+
+                <div class="page-menu">
+                    <div class="hamburger">
+                        <!--style failis sai pandud see osa võrreldes videos näidatuga teisiti-->
+                        <!--Ma ei kasutanud margin väärtust.-->
+                        <!--justify-content väärtuseks panin space-around-->
+                        <!--Lisaks määrasin joonekeste värviks teise värvi, mis oli mul Figmas määratud.-->
+                        <!--Joonte pikkused vaatasin visuaalselt.-->
+                        <!--Nupukese taustavärv on võrreldes Figmas tooduga natuke muudetud.-->
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="menu-list">
+                        <ul>
+                            <!--kasutan enda poolt määratud nimetusi-->
+                            <li><a href="#">avaleht</a></li>
+                            <li><a href="#">tööd</a></li>
+                            <li><a href="#">kliendid</a></li>
+                            <li><a href="#">kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="profile-image">
+                    <img src="images/girl-soul.jpeg" alt="">
+                </div>
+
+                <div class="profile-learn-more">
+                    <div class="profile-details">
+                        <span>Kaunid ja elegantsed <br> veebilehed!</span>
+                        <button><img src="images/silm.svg" alt="silm"> Vaata minu töid</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main">
+            <!--tööala-->
+            <div class="myWorks">
+                <div class="headline">
+                    <hr>
+                    <h3>Minu tööd</h3>
+                </div>
+                <div class="my-works-intro">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptate quibusdam deserunt similique exercitationem odit saepe maiores incidunt modi, perferendis natus excepturi esse? Neque nulla minus, saepe alias consequatur delectus.</p>
+                </div>
+
+                <div class="frame">
+                    <img src="images/Render2.png" alt="">
+                </div>
+
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="images/Render1.png" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Render2.png" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/HAMSTER.jfif" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/5. Nädal 1. Ülesanne ilma katuseta.PNG" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/IMG_1423.jpeg" alt="">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/LOPPMAJA 1.jfif" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--klientide ala-->
+            <div class="myClients">
+                <div class="headline">
+                    <hr>
+                    <h3>Minu kliendid</h3>
+                </div>
+                <div class="myclients-card">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/auto.svg" alt="">
+                        </div>
+                        <div class="card-text-content">
+                            <h4>Äge autopood</h4>
+                            <div class="rollid">
+                                <span>Kasutajakogemus</span>
+                            </div>
+                            <div class="rollid">
+                                <span>Lõppkasutaja</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Magni deserunt eligendi voluptate, id in tempore minima animi nobis ex possimus, 
+                            laborum consectetur aliquid fuga tempora voluptatem enim minus aut adipisci.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="images/ostukaru.svg" alt="">
+                        </div>
+                        <div class="card-text-content">
+                            <h4>Toidupood</h4>
+                            <div class="rollid">
+                                <span>Kasutajakogemus</span>
+                            </div>
+                            <div class="rollid">
+                                <span>Lõppkasutaja</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Magni deserunt eligendi voluptate, id in tempore minima animi nobis ex possimus, 
+                            laborum consectetur aliquid fuga tempora voluptatem enim minus aut adipisci.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <hr>
+                <!--kontakteerumise ala-->
+                <div class="btn-contact">
+                    <button>Kontakt</button>
+                </div>
+                <div class="headline">
+                    <h3 id="contact-me-headline">Ühenduse võtmine</h3>
+                </div>
+                <div class="contact-intro">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptates dolor reiciendis expedita ea voluptatibus, aut asperiores maiores, laborum harum veritatis eveniet modi dolorum, inventore eos amet id tenetur distinctio.</p>
+                </div>
+                <div class="get-in-touch">
+                    <div class="contact-form">
+                        <form action="#">
+                            <div class="label">
+                                <label form="name">Nimi</label>
+                            </div>
+                            <div class="form-input">
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="label">
+                                <label form="email">Meiliaadress</label>
+                            </div>
+                            <div class="form-input">
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="label">
+                                <label form="message">Sõnum</label>
+                            </div>
+                            <div class="text-area">
+                                <textarea name="message" id="message" rows="10" required></textarea>
+                            </div>
+                            <div class="btn-form">
+                                <button type="submit">Saada</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-details">
+                        <ul>
+                            <!--Määrasin siin ikoonile ja tekstile eraldi id,-->
+                            <!--et css joondada pilt ja tekst horisonaalselt keskjoonele.-->
+                            <!--Samuti lisasin pildi ja teksti vahele tühja ruumi,-->
+                            <!--määrates pildile eraldi id.-->
+                            <li id="lahku"><img src="images/telefon.svg" alt="telefon" id="pildike">+372 1234 5678</li>
+                            <li id="lahku"><img src="images/kiri.svg" alt="kiri" id="pildike">sigri.migri@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="social-media">
+                        <div class="headline">
+                            <h3>Minu kanalid</h3>
+                        </div>
+                        <div class="social-media-icons">
+                            <ul>
+                                <li><img src="images/facebook.svg" alt=""></li>
+                                <li><img src="images/instagram.svg" alt=""></li>
+                                <li><img src="images/linkendin.svg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Tartus, 2024</p>
+        </footer>
+    </div>
+</body>
+</html>
