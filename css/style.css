@@ -13,6 +13,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Lato", system-ui;
+    overflow-x: hidden;
 }
 .container {
     width: 100%;
@@ -30,6 +31,7 @@ body {
     border-radius: 10px;
     background-color: #cecaca;
     margin: 26px;
+    justify-self: end;
 }
 .line {
     width: 50px;
@@ -53,6 +55,39 @@ body {
 .page-menu {
     justify-self: end;
 }
+
+.menu-panel {
+    position: absolute;
+    right: -218px;
+    top: 0;
+    background-color: #FFD0D0;
+    width: 218px;
+    height: 350px;
+    padding: 50px;
+    box-sizing: border-box;
+    transition: right 1s ease-in-out;
+}
+.menu-panel ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-family: "Lato", system-ui;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--primary-color-text);
+}
+.menu-panel ul li {
+    margin-bottom: 32px;
+}
+.menu-panel ul li a {
+    color: black;
+    text-decoration: none;
+}
+.menu-panel.active {
+    right: 0;
+}
+
+
 .profile {
     text-align: center;
 }
@@ -175,7 +210,7 @@ footer {
     display: none;
 }
 
-@media (min-width: 600px) and (max-width: 1024px){
+@media (min-width: 667px) and (max-width: 1024px){
     .hamburger {
         display: none;
     }
@@ -199,6 +234,20 @@ footer {
         display: inline-block;
         margin-right: 10px;
     }
+    /*Järgmised kaks osa lisasin, et saada samasugust menppd nagu sülearvutis.*/
+    .menu-list ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--primary-color-text);
+        transition: transform 0.5s ease-in-out, text-shadow 0.5s ease-in-out;
+    }
+    .menu-list ul li a:hover {
+        transform: scale(1.1);
+        text-shadow: 2px 2px 1px var(--primary-color-lines-ham);
+    }
+
+
+
     .profile {
         display: grid;
         grid-template-columns: 1fr 2fr;

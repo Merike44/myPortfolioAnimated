@@ -31,12 +31,27 @@
                     <div class="menu-list">
                         <ul>
                             <!--kasutan enda poolt määratud nimetusi-->
+                            <!--Püüdsin lisada lehele sisemisi linke-->
                             <li><a href="#">avaleht</a></li>
-                            <li><a href="#">tööd</a></li>
-                            <li><a href="#">kliendid</a></li>
-                            <li><a href="#">kontakt</a></li>
+                            <li><a href="#minutood">tööd</a></li>
+                            <li><a href="#minukliendid">kliendid</a></li>
+                            <li><a href="#contact-me-headline">kontakt</a></li>
                         </ul>
                     </div>
+
+                    <!--Varjatud menüü-->
+                    <div class="menu-panel">
+                        <ul>
+                            <!--Püüdsin lisada lehele sisemisi linke-->
+                            <li><a href="#">avaleht</a></li>
+                            <li><a href="#minutood">tööd</a></li>
+                            <li><a href="#minukliendid">kliendid</a></li>
+                            <li><a href="#minukontakt">kontakt</a></li>
+                        </ul>
+                    </div>
+
+
+
                 </div>
             </div>
 
@@ -60,14 +75,14 @@
             <div class="myWorks">
                 <div class="headline">
                     <hr>
-                    <h3>Minu tööd</h3>
+                    <h3 id="minutood">Minu tööd</h3><!--Siia lisasin id tööde kohta-->
                 </div>
                 <div class="my-works-intro">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptate quibusdam deserunt similique exercitationem odit saepe maiores incidunt modi, perferendis natus excepturi esse? Neque nulla minus, saepe alias consequatur delectus.</p>
                 </div>
 
                 <div class="frame">
-                    <img src="images/Render2.png" alt="">
+                    <img id="frame" src="images/esimenepilt.png" alt="Minu tööd">
                 </div>
 
                 <div class="gallery">
@@ -78,13 +93,13 @@
                         <img src="images/Render2.png" alt="">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/HAMSTER.jfif" alt="">
+                        <img src="images/esimenepilt.png" alt="">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/5. Nädal 1. Ülesanne ilma katuseta.PNG" alt="">
+                        <img src="images/kolmaspilt.png" alt="">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/IMG_1423.jpeg" alt="">
+                        <img src="images/viiespilt.png" alt="">
                     </div>
                     <div class="gallery-item">
                         <img src="images/LOPPMAJA 1.jfif" alt="">
@@ -96,7 +111,7 @@
             <div class="myClients">
                 <div class="headline">
                     <hr>
-                    <h3>Minu kliendid</h3>
+                    <h3 id="minukliendid">Minu kliendid</h3><!--Siia lisasin id tööde kohta-->
                 </div>
                 <div class="myclients-card">
                     <div class="card">
@@ -140,7 +155,7 @@
                 <hr>
                 <!--kontakteerumise ala-->
                 <div class="btn-contact">
-                    <button>Kontakt</button>
+                    <button id="minukontakt">Kontakt</button><!--Siia lisasin id tööde kohta-->
                 </div>
                 <div class="headline">
                     <h3 id="contact-me-headline">Ühenduse võtmine</h3>
@@ -203,5 +218,6 @@
             <p>Tartus, 2024</p>
         </footer>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
